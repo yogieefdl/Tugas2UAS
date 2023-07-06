@@ -1,0 +1,57 @@
+//Yogie Fadila Rahman
+//227064516090
+
+// Deklarasi package
+package tugasUAS;
+
+// Deklarasi nama class Karyawan
+public class Karyawan {
+
+    // Deklarasi variabel yang digunakan
+    String NIP;
+    String Nama;
+    String Jenis_Kelamin;
+    int Jumlah_Hari;
+    int Total_Gaji;
+
+    // Method untuk menampilkan informasi karyawan
+    void Karyawan() {
+        System.out.println("NIP: " + NIP);
+        System.out.println("Nama: " + Nama);
+        System.out.println("Jenis Kelamin: " + Jenis_Kelamin);
+    }
+
+    // Method untuk melakukan absen kerja
+    void AbsenKerja() {
+        System.out.println("Masuk Kerja: " + Jumlah_Hari);
+    }
+
+    // Method untuk menghitung gaji karyawan
+    void HitungGaji() {
+        System.out.println("Gaji: " + Jumlah_Hari * 50000);
+    }
+}
+
+// Class Dosen merupakan subclass dari Karyawan
+class Dosen extends Karyawan {
+
+    String Golongan;
+    int Jumlah_SKS;
+    int Upah_per_SKS;
+
+    // Method untuk menampilkan golongan dosen
+    void Golongan() {
+        System.out.println("Golongan: " + Golongan);
+    }
+
+    // Override method HitungGaji untuk menghitung gaji dosen
+    @Override
+    void HitungGaji() {
+        System.out.println("Gaji: Rp." + Upah_per_SKS * Jumlah_SKS * Jumlah_Hari);
+    }
+}
+
+// Class Staff merupakan subclass dari Karyawan
+class Staff extends Karyawan {
+  
+}
