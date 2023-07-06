@@ -1,0 +1,66 @@
+//Yogie Fadila Rahman
+//227064516090
+
+package tugasUAS;
+
+public class Main {
+
+   
+    public static void main(String[] args) {
+        
+        //Untuk membuat objek Karyawan Unas1
+        Karyawan Unas1 = new Karyawan();
+        
+        //Untuk mengisi data karyawan Unas1
+        Unas1.NIP = "231 ";
+        Unas1.Nama = "Sarifin ";
+        Unas1.Jenis_Kelamin = "Laki-Laki ";
+        Unas1.Jumlah_Hari = 26 ;
+        
+        //Untuk memanggil method
+        Unas1.Karyawan();
+        Unas1.AbsenKerja();
+        Unas1.HitungGaji();
+        System.out.println ( "" );
+        
+        //Untuk membuat objek Dosen Unas2
+        Dosen Unas2 = new Dosen();
+      
+        //Untuk mengisi data Dosen Unas2
+        Unas2.NIP = "465 ";
+        Unas2.Nama = "Nur Olivia ";
+        Unas2.Jenis_Kelamin = "Perempuan ";
+        Unas2.Jumlah_Hari = 28 ;
+        Unas2.Golongan = "4B" ;
+        Unas2.Jumlah_SKS = 3 ;
+        Unas2.Upah_per_SKS = 120000 ;
+        
+        //Untuk memanggil method
+        Unas2.Karyawan();
+        Unas2.Golongan();
+        Unas2.AbsenKerja();
+        Unas2.HitungGaji();
+        System.out.println ( "" );
+        
+        //Untuk membuat objek Staff Unas3
+        Staff Unas3 = new Staff();
+        
+        //Untuk mengisi data Staff Unas3
+        Unas3.NIP = "211 ";
+        Unas3.Nama = "Jamaludin ";
+        Unas3.Jenis_Kelamin = "Laki-Laki ";
+        Unas3.Jumlah_Hari = 25 ;
+        
+        //Untuk memanggil method
+        Unas3.Karyawan();
+        Unas3.AbsenKerja();
+        Unas3.HitungGaji();
+        System.out.println ( "" );
+                
+        
+        
+        
+        
+    }
+    
+}
